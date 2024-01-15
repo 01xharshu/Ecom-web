@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Home from './Home';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
     <div className="App">
       <h1>E-Study App</h1>
-      <Switch>
+      <Routes>
         <Route path='/checkout'>
           <Header />
         </Route>
@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Home />
         </Route>
-      </Switch>
+      </Routes>
     </div>
     </Router>
   );
